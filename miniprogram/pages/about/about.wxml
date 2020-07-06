@@ -1,0 +1,23 @@
+<view class="img_wrap">
+	<image mode="widthFix" class="img" src="../../images/to_shoot.jpg"></image>
+</view>
+
+<view class="info">
+	<view class="name">去拍 ToShoot</view>
+	<view class="version">Version:0.0.1</view>
+</view>
+
+
+<van-divider custom-style="padding:0 40px" />
+
+<view class="rich_text">
+	<view class="title">To Shoot</view>
+	<text class="content" >专属于影视从业者与影像爱好者的简单、方便、好用的效率工具。</text>
+</view>
+
+<view class="button">
+	<view class="button1"><button type="default" plain="true" size="mini" open-type="feedback">意见反馈</button></view>
+	<view class="button2"><button bindtap="handleReward" type="default" plain="true" size="mini">打赏作者</button></view>
+</view>
+
+

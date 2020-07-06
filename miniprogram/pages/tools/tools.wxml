@@ -1,1 +1,45 @@
-<view>hello</view>
+<image class="top_img" mode="widthFix" src="/images/index.png"></image>
+
+<view class="subTitle">拍摄</view>
+<van-grid clickable column-num="2">
+  <van-grid-item
+    icon="home-o"
+    link-type="navigateTo"
+    url="/pages/dashboard/index"
+    text="Navigate 跳转"
+  />
+  <van-grid-item
+    icon="search"
+    link-type="reLaunch"
+    url="/pages/dashboard/index"
+    text="ReLaunch 跳转"
+  />
+	  <van-grid-item
+    icon="home-o"
+    link-type="navigateTo"
+    url="/pages/dashboard/index"
+    text="Navigate 跳转"
+  />
+  <van-grid-item
+    icon="search"
+    link-type="reLaunch"
+    url="/pages/dashboard/index"
+    text="ReLaunch 跳转"
+  />
+</van-grid>
+
+<view class="subTitle">媒体</view>
+<van-grid clickable column-num="2">
+  <van-grid-item
+    icon="home-o"
+    link-type="navigateTo"
+    url="/pages/dashboard/index"
+    text="Navigate 跳转"
+  />
+  <van-grid-item
+    icon="search"
+    link-type="reLaunch"
+    url="/pages/dashboard/index"
+    text="ReLaunch 跳转"
+  />
+</van-grid>

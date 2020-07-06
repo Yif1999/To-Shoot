@@ -1,7 +1,9 @@
 {
 	"pages": [
 		"pages/tools/tools",
-		"pages/user/user"
+		"pages/user/user",
+		"pages/about/about",
+		"pages/reward/reward"
 	],
 	"window": {
 		"backgroundColor": "#FFFFFF",
@@ -25,7 +27,6 @@
     }]
   },
 	"usingComponents": {
-		"van-button": "@vant/weapp/button/index",
 		"van-icon": "@vant/weapp/icon/index"
   }
 }

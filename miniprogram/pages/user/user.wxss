@@ -1,1 +1,10 @@
-/* pages/user/user.wxss */
+.svg_wrap{
+	display: flex;
+	justify-content: center;
+}
+
+.no_data{
+	padding-top: 150rpx;
+	width: 25%;
+	
+}

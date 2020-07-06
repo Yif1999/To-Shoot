@@ -1,1 +1,9 @@
-/* pages/tools/tools.wxss */
+.subTitle{
+	font-size: 28rpx;
+	padding: 30rpx;
+	color: rgb(125, 125, 125);
+}
+
+.top_img{
+	padding-top: 50rpx;
+}

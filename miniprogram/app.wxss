@@ -1,3 +1,8 @@
 page {
 	background-color: #F6F6F6;
+	--themeColor: #1989FA;
+}
+
+image{
+  width: 100%;
 }

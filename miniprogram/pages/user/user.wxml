@@ -1,1 +1,10 @@
-<text>world</text>
+<van-cell
+  is-link
+  title="关于"
+  link-type="navigateTo"
+  url="/pages/about/about"
+/>
+
+<view class="svg_wrap">
+	<image class="no_data" src="../../images/no_data.svg"></image>
+</view>
