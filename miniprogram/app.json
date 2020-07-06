@@ -1,13 +1,31 @@
 {
 	"pages": [
-		"pages/tools/tools"
+		"pages/tools/tools",
+		"pages/user/user"
 	],
 	"window": {
-		"backgroundColor": "#F6F6F6",
+		"backgroundColor": "#FFFFFF",
 		"backgroundTextStyle": "light",
-		"navigationBarBackgroundColor": "#F6F6F6",
+		"navigationBarBackgroundColor": "#FFFFFF",
 		"navigationBarTitleText": "去拍 ToShoot",
 		"navigationBarTextStyle": "black"
 	},
-	"sitemapLocation": "sitemap.json"
+	"sitemapLocation": "sitemap.json",
+	"tabBar": {
+    "custom": true,
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "backgroundColor": "#000000",
+    "list": [{
+      "pagePath": "pages/tools/tools",
+      "text": "工具"
+    }, {
+      "pagePath": "pages/user/user",
+      "text": "我的"
+    }]
+  },
+	"usingComponents": {
+		"van-button": "@vant/weapp/button/index",
+		"van-icon": "@vant/weapp/icon/index"
+  }
 }
