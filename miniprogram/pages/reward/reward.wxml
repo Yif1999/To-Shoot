@@ -1,2 +1,15 @@
-<!--pages/reward/reward.wxml-->
-<text>pages/reward/reward.wxml</text>
+<view class="container">
+  <view class="userinfo">
+    <block>
+      <image class="userinfo-avatar" src="../../images/avatar.jpg" mode="cover"></image>
+      <text class="userinfo-nickname">Yif</text>
+    </block>
+  </view>
+</view>
+
+<view class="reward">
+  <image bindtap="handleWeChat" mode="widthFix" class="qrcode" src="../../images/WeChat.png"></image>
+  <image bindtap="handleAliPay" mode="widthFix" class="qrcode" src="../../images/AliPay.png"></image>
+</view>
+
+<text class="text">感谢您的支持！</text>

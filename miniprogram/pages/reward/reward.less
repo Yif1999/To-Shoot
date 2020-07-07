@@ -1,0 +1,48 @@
+.container{
+  .userinfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .userinfo-avatar{
+      width: 128rpx;
+      height: 128rpx;
+      margin-top: 150rpx;
+      margin-bottom: 20rpx;
+      border-radius: 50%;
+      box-shadow: -4px -4px 10px 8px rgb(251, 251, 251),4px 4px 10px -8px rgba(0, 0, 0, 0.5);
+    }
+    .userinfo-nickname{
+      color: #aaa;
+    }
+  }
+}
+
+.reward{
+  margin-top: 150rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  display: flex;
+
+  .qrcode{
+    flex: 1;
+    border-radius: 20rpx;
+    box-shadow: -4rpx -4rpx 10rpx8rpx rgb(255, 255, 255,1),8rpx 8rpx 20rpx -16rpx rgba(0, 0, 0, 0.5);
+
+    &:nth-child(1){
+      margin: 0 10rpx;
+    }
+    &:nth-child(2){
+      margin: 0 10rpx;
+    }
+  }
+}
+
+.text{
+  position: fixed;
+	bottom: 0;
+  width: 100%;
+	height: 50px;
+	text-align: center;
+	font-size: small;
+	color: #ccc;
+}

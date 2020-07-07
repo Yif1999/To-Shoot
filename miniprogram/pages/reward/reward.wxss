@@ -1,1 +1,42 @@
-/* pages/reward/reward.wxss */
+.container .userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .userinfo .userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin-top: 150rpx;
+  margin-bottom: 20rpx;
+  border-radius: 50%;
+  box-shadow: -4px -4px 10px 8px #fbfbfb, 4px 4px 10px -8px rgba(0, 0, 0, 0.5);
+}
+.container .userinfo .userinfo-nickname {
+  color: #aaa;
+}
+.reward {
+  margin-top: 150rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  display: flex;
+}
+.reward .qrcode {
+  flex: 1;
+  border-radius: 20rpx;
+  box-shadow: -4rpx -4rpx 10rpx 8rpx #ffffff, 8rpx 8rpx 20rpx -16rpx rgba(0, 0, 0, 0.7);
+}
+.reward .qrcode:nth-child(1) {
+  margin: 0 10rpx;
+}
+.reward .qrcode:nth-child(2) {
+  margin: 0 10rpx;
+}
+.text {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  font-size: small;
+  color: #ccc;
+}
