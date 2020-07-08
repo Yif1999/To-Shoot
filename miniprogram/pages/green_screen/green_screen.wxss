@@ -28,6 +28,11 @@
   width: 24pt;
   height: 24pt;
 }
+.page .mark .mark4 {
+  position: fixed;
+  width: 24pt;
+  height: 24pt;
+}
 .vant_pop .popup {
   display: flex;
   flex-flow: column;
@@ -47,22 +52,34 @@
   align-items: center;
 }
 .vant_pop .popup .color .chooseColor_wrap .chooseColor1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 60rpx;
   width: 60rpx;
   border-radius: 30rpx;
   background-color: #00FF00;
 }
 .vant_pop .popup .color .chooseColor_wrap .chooseColor2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 60rpx;
   width: 60rpx;
   border-radius: 30rpx;
   background-color: #0000FF;
 }
 .vant_pop .popup .color .chooseColor_wrap .chooseColor3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 60rpx;
   width: 60rpx;
   border-radius: 30rpx;
   background-color: #FFFF00;
+}
+.vant_pop .popup .color .active .chooseColor1 {
+  border: 10rpx solid currentColor;
 }
 .vant_pop .popup .lightness {
   padding-top: 10px;

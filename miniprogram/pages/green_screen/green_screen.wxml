@@ -4,6 +4,7 @@
 		<image class="mark1" src="../../images/mark.svg"></image>
 		<image class="mark2" src="../../images/mark.svg"></image>
 		<image class="mark3" src="../../images/mark.svg"></image>
+		<image class="mark4" style="left:{{width/2-16}}px;top:{{height/2-16}}px" src="../../images/mark.svg"></image>
 	</view>
 	
 </view>
@@ -22,9 +23,15 @@
 
 	<view class="popup" >
 		<view class="color">
-			<view class="chooseColor_wrap"><view bindtap="changeGreen" class="chooseColor1"></view></view>
-			<view class="chooseColor_wrap"><view bindtap="changeBlue" class="chooseColor2"></view></view>
-			<view class="chooseColor_wrap"><view bindtap="changeYellow" class="chooseColor3"></view></view>
+			<view class="chooseColor_wrap"><view bindtap="changeGreen" class="chooseColor1">
+				<van-icon wx:if="{{num==0}}" name="success" color="black" size="40rpx"/>
+			</view></view>
+			<view class="chooseColor_wrap"><view bindtap="changeBlue" class="chooseColor2">
+				<van-icon wx:if="{{num==1}}" name="success" color="white"/>
+			</view></view>
+			<view class="chooseColor_wrap"><view bindtap="changeYellow" class="chooseColor3">
+				<van-icon wx:if="{{num==2}}" name="success" color="black"/>
+			</view></view>
 		</view>
 		<view class="isMark">
 			<van-cell title="显示定位十字">

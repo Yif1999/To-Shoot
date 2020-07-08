@@ -10,9 +10,21 @@ Page({
 		lastTapTime:0,
     checked:true,
     brightness:0.5,
+    height:0,
+    width:0,
   },
   
   onShow(){
+    console.log(this.data.num!==0);
+    
+    wx.getSystemInfo({
+      success: (result) => {
+        this.setData({
+          height:result.screenHeight,
+          width:result.screenWidth,
+        })
+      },
+    })
     wx.getScreenBrightness({
       success: (option) => {
         this.setData({
