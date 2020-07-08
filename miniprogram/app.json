@@ -1,9 +1,10 @@
 {
 	"pages": [
-		"pages/tools/tools",
+		"pages/index/index",
 		"pages/user/user",
 		"pages/about/about",
-		"pages/reward/reward"
+		"pages/reward/reward",
+		"pages/green_screen/green_screen"
 	],
 	"window": {
 		"backgroundColor": "#FFFFFF",
@@ -19,7 +20,7 @@
     "selectedColor": "#000000",
     "backgroundColor": "#000000",
     "list": [{
-      "pagePath": "pages/tools/tools",
+      "pagePath": "pages/index/index",
       "text": "工具"
     }, {
       "pagePath": "pages/user/user",

@@ -2,7 +2,7 @@ Component({
   data: {
     active: 0,
     list: [{
-      "url": "/pages/tools/tools",
+      "url": "/pages/index/index",
       "icon":"apps-o",
       "text": "工具"
     }, {

@@ -6,4 +6,5 @@
 
 .top_img{
 	padding-top: 50rpx;
+	height: auto;
 }

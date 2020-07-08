@@ -65,8 +65,8 @@
 					"query": ""
 				},
 				{
-					"id": -1,
-					"name": "工具",
+					"id": 1,
+					"name": "首页",
 					"pathName": "pages/tools/tools",
 					"query": "",
 					"scene": null
@@ -89,6 +89,14 @@
 					"id": -1,
 					"name": "打赏",
 					"pathName": "pages/reward/reward",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "绿幕",
+					"pathName": "pages/green_screen/green_screen",
+					"query": "",
 					"scene": null
 				}
 			]

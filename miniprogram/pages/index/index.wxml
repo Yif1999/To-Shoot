@@ -5,8 +5,8 @@
   <van-grid-item
     icon="home-o"
     link-type="navigateTo"
-    url="/pages/dashboard/index"
-    text="Navigate 跳转"
+    url="/pages/green_screen/green_screen"
+    text="绿幕"
   />
   <van-grid-item
     icon="search"

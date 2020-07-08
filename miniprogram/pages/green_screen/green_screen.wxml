@@ -1,0 +1,48 @@
+<!-- 绿幕布局 -->
+<view bindtap="mutiClick" class="page" style="background-color: {{bgColor[num]}}">
+	<view class="mark" hidden="{{!checked}}">
+		<image class="mark1" src="../../images/mark.svg"></image>
+		<image class="mark2" src="../../images/mark.svg"></image>
+		<image class="mark3" src="../../images/mark.svg"></image>
+	</view>
+	
+</view>
+
+
+<!-- 弹窗提示内容 -->
+<van-popup
+	class="vant_pop"
+  show="{{ show }}"
+  round
+  position="bottom"
+  custom-style="height: 275px"
+  bind:close="onClose"
+	overlay="{{true}}"
+>
+
+	<view class="popup" >
+		<view class="color">
+			<view class="chooseColor_wrap"><view bindtap="changeGreen" class="chooseColor1"></view></view>
+			<view class="chooseColor_wrap"><view bindtap="changeBlue" class="chooseColor2"></view></view>
+			<view class="chooseColor_wrap"><view bindtap="changeYellow" class="chooseColor3"></view></view>
+		</view>
+		<view class="isMark">
+			<van-cell title="显示定位十字">
+				<van-switch bindchange="onChange" checked="{{ checked }}" size="24px" />
+			</van-cell>
+
+		</view>
+		<view class="lightness">
+			<text class="text">亮度设置</text>
+			<slider block-size="20" activeColor="var(--themeColor)" min="0" max="1" step="0.01" value="{{brightness}}" bindchanging="changeBrightness"></slider>
+		</view>
+		<view class="button">
+			<view class="back" bindtap="handleBack">返回</view>
+			<view class="ok" bindtap="onClose">确定</view>
+		</view>
+	</view>	
+
+</van-popup>
+
+<!-- 轻提示 -->
+<van-toast id="van-toast" />

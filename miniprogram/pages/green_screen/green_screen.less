@@ -1,0 +1,108 @@
+.page {
+	display: block;
+	min-height: 100%;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+  z-index: 1;
+
+  .mark{
+		.mark1{
+			position: fixed;
+			top: 20pt;
+			left: 12pt;
+			width: 24pt;
+			height: 24pt;
+		}
+		.mark2{
+			position: fixed;
+			bottom: 12pt;
+			left: 12pt;
+			width: 24pt;
+			height: 24pt;
+		}
+		.mark3{
+			position: fixed;
+			bottom: 12pt;
+			right: 12pt;
+			width: 24pt;
+			height: 24pt;
+		}
+	}
+}
+
+.vant_pop{
+	.popup{
+		display: flex;
+		flex-flow: column;
+		margin: 20px;
+		.color{
+			display: flex;
+			padding-top: 5px;
+			padding-bottom: 15px;
+			padding-left: 30rpx;
+			padding-right: 30rpx;
+			.chooseColor_wrap{
+				flex: 1;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				.chooseColor1{
+					height: 60rpx;
+					width: 60rpx;
+					border-radius: 30rpx;
+					background-color: #00FF00;
+				}
+				.chooseColor2{
+					height: 60rpx;
+					width: 60rpx;
+					border-radius: 30rpx;
+					background-color: #0000FF;
+				}
+				.chooseColor3{
+					height: 60rpx;
+					width: 60rpx;
+					border-radius: 30rpx;
+					background-color: #FFFF00;
+				}
+			}
+		}
+		.lightness{
+			padding-top: 10px;
+			.text{
+				font-size: 14px;
+				font-weight: normal;
+				padding-left: 16px;
+			}
+		}
+		.button{
+			padding-top: 10px;
+			display: flex;
+			.back{
+				flex: 1;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 100%;
+				height: 40px;
+				border-radius: 5px;
+				background-color: rgb(245, 245, 245);
+				margin: 5px;
+				box-shadow:  4px 4px 10px -8px rgba(0, 0, 0, 0.2);
+			}
+			.ok{
+				flex: 1;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 100%;
+				color: white;
+				border-radius: 5px;
+				background-color: var(--themeColor);
+				margin: 5px;
+				box-shadow:  6px 6px 12px -10px rgba(25, 137, 250, 1);
+			}
+		}
+	}
+}
