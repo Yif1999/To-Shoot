@@ -4,7 +4,8 @@
 		"pages/user/user",
 		"pages/about/about",
 		"pages/reward/reward",
-		"pages/green_screen/green_screen"
+		"pages/green_screen/green_screen",
+		"pages/screen_light/screen_light"
 	],
 	"window": {
 		"backgroundColor": "#FFFFFF",

@@ -56,20 +56,13 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": -1,
 			"list": [
 				{
 					"id": -1,
 					"name": "db guide",
 					"pathName": "pages/databaseGuide/databaseGuide",
 					"query": ""
-				},
-				{
-					"id": 1,
-					"name": "首页",
-					"pathName": "pages/tools/tools",
-					"query": "",
-					"scene": null
 				},
 				{
 					"id": -1,
@@ -96,6 +89,13 @@
 					"id": -1,
 					"name": "绿幕",
 					"pathName": "pages/green_screen/green_screen",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "屏幕灯光",
+					"pathName": "pages/screen_light/screen_light",
 					"query": "",
 					"scene": null
 				}

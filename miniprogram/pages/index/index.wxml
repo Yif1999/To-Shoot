@@ -10,21 +10,21 @@
   />
   <van-grid-item
     icon="search"
-    link-type="reLaunch"
-    url="/pages/dashboard/index"
-    text="ReLaunch 跳转"
+    link-type="navigateTo"
+    url="/pages/screen_light/screen_light"
+    text="屏幕灯光"
   />
 	  <van-grid-item
     icon="home-o"
     link-type="navigateTo"
     url="/pages/dashboard/index"
-    text="Navigate 跳转"
+    text="场景光效"
   />
   <van-grid-item
     icon="search"
     link-type="reLaunch"
     url="/pages/dashboard/index"
-    text="ReLaunch 跳转"
+    text="场记板"
   />
 </van-grid>
 

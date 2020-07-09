@@ -3,27 +3,17 @@ import Toast from "../../miniprogram_npm/@vant/weapp/toast/toast";
 Page({
 
 	data: {
-		bgColor:["#00FF00","#0000FF","#FFFF00"],
-		num:0,
-		show:true,
+    show:true,
 		clickNum:3,
 		lastTapTime:0,
-    checked:true,
     brightness:0.5,
     height:0,
     width:0,
+    rgb: 'rgb(0,255,0)',//初始值
+    pick: false
   },
   
   onShow(){
-
-    wx.getSystemInfo({
-      success: (result) => {
-        this.setData({
-          height:result.screenHeight,
-          width:result.screenWidth,
-        })
-      },
-    })
     wx.getScreenBrightness({
       success: (option) => {
         this.setData({
@@ -31,6 +21,7 @@ Page({
         })
       },
     })
+    
   },
 
   changeBrightness(slide){
@@ -45,7 +36,7 @@ Page({
 
   onClose() {
 		this.setData({ show: false });
-		Toast('三击屏幕重新打开弹窗');
+		Toast('双击屏幕重新打开弹窗');
   },
 	
 	mutiClick:function(e){
@@ -59,7 +50,7 @@ Page({
         me.setData({clickNum:1})
       }
       // console.log("me.data.clickNum:",me.data.clickNum);
-      if(me.data.clickNum==3){
+      if(me.data.clickNum==2){
 				console.log("触发成功");
 				this.showPopup();
       }
@@ -67,13 +58,6 @@ Page({
       lastTapTime: curTime
     })
 	},
-	
-	onChange({ detail }) {
-		console.log(detail);
-    this.setData({ 
-			checked: detail 
-		});
-  },
 
   handleBack(e){
     wx.navigateBack({
@@ -81,21 +65,19 @@ Page({
     })
   },
 
-  changeGreen(e){
+  toPick: function () {
     this.setData({
-      num:0
+      pick: true
     })
   },
-  changeBlue(e){
+
+  pickColor(e) {
+    let rgb = e.detail.color;
     this.setData({
-      num:1
+      rgb
     })
   },
-  changeYellow(e){
-    this.setData({
-      num:2
-    })
-  },
+
   onUnload(){
     wx.setScreenBrightness({
       value: this.data.brightness,

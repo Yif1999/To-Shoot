@@ -1,0 +1,40 @@
+<!-- 绿幕布局 -->
+<view bindtap="mutiClick" class="page" style="background-color: {{rgb}}">
+</view>
+
+
+<!-- 弹窗提示内容 -->
+<van-popup
+	class="vant_pop"
+  show="{{ show }}"
+  round
+  position="bottom"
+  custom-style="height: 220px"
+  bind:close="onClose"
+	overlay="{{false}}"
+	z-index="2"
+>
+
+	<view class="popup" >
+		<view class="color">
+			<van-cell bind:click="toPick" title="色彩设置">
+				<view class="colorDisplay" style="background-color:{{rgb}}" />
+			</van-cell>
+		</view>
+		<view class="lightness">
+			<text class="text">亮度设置</text>
+			<slider block-size="20" activeColor="var(--themeColor)" min="0" max="1" step="0.01" value="{{brightness}}" bindchanging="changeBrightness"></slider>
+		</view>
+		<view class="button">
+			<view class="back" bindtap="handleBack">返回</view>
+			<view class="ok" bindtap="onClose">确定</view>
+		</view>
+	</view>	
+
+</van-popup>
+
+<!-- 轻提示 -->
+<van-toast id="van-toast" />
+
+<!-- 拾色器 -->
+<color-picker maskClosable="{{true}}" closabled="{{false}}" mask="{{true}}" bindchangeColor="pickColor" initColor="{{rgb}}" show="{{pick}}" />

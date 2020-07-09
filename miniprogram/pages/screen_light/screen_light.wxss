@@ -1,0 +1,60 @@
+.page {
+  display: block;
+  min-height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.vant_pop .popup {
+  display: flex;
+  flex-flow: column;
+  margin: 20px;
+}
+.vant_pop .popup .color .colorDisplay {
+  margin-left: auto;
+  margin-top: 3px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+}
+.vant_pop .popup .lightness {
+  padding-top: 10px;
+}
+.vant_pop .popup .lightness .text {
+  font-size: 14px;
+  font-weight: normal;
+  padding-left: 16px;
+}
+.vant_pop .popup .button {
+  display: flex;
+}
+.vant_pop .popup .button .back {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  margin: 15px;
+  color: var(--themeColor);
+  box-shadow: 4px 4px 10px -8px rgba(0, 0, 0, 0.2);
+}
+.vant_pop .popup .button .ok {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: white;
+  border-radius: 5px;
+  background-color: var(--themeColor);
+  margin: 15px;
+  box-shadow: 6px 6px 12px -10px var(--themeColor);
+}
