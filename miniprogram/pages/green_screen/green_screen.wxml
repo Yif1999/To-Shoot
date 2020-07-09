@@ -1,7 +1,7 @@
 <!-- 绿幕布局 -->
 <view bindtap="mutiClick" class="page" style="background-color: {{bgColor[num]}}">
 	<view class="mark" hidden="{{!checked}}">
-		<image class="mark1" src="../../images/mark.svg"></image>
+		<image class="mark1" style="top:{{statusBarHeight+5}}px" src="../../images/mark.svg"></image>
 		<image class="mark2" src="../../images/mark.svg"></image>
 		<image class="mark3" src="../../images/mark.svg"></image>
 		<image class="mark4" style="left:{{width/2-16}}px;top:{{height/2-16}}px" src="../../images/mark.svg"></image>

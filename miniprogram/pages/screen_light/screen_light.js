@@ -21,7 +21,12 @@ Page({
         })
       },
     })
-    
+    let rgb=wx.getStorageSync('color');
+    if (rgb){
+      this.setData({
+        rgb
+      })
+    }
   },
 
   changeBrightness(slide){
@@ -36,7 +41,7 @@ Page({
 
   onClose() {
 		this.setData({ show: false });
-		Toast('双击屏幕重新打开弹窗');
+		Toast('单击屏幕重新打开弹窗');
   },
 	
 	mutiClick:function(e){
@@ -50,7 +55,7 @@ Page({
         me.setData({clickNum:1})
       }
       // console.log("me.data.clickNum:",me.data.clickNum);
-      if(me.data.clickNum==2){
+      if(me.data.clickNum==1){
 				console.log("触发成功");
 				this.showPopup();
       }
@@ -82,5 +87,6 @@ Page({
     wx.setScreenBrightness({
       value: this.data.brightness,
     })
+    wx.setStorageSync('color', this.data.rgb)
   }
 })

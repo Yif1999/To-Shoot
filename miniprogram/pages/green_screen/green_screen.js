@@ -12,6 +12,7 @@ Page({
     brightness:0.5,
     height:0,
     width:0,
+    statusBarHeight:0,
   },
   
   onShow(){
@@ -19,6 +20,7 @@ Page({
     wx.getSystemInfo({
       success: (result) => {
         this.setData({
+          statusBarHeight:result.statusBarHeight,
           height:result.screenHeight,
           width:result.screenWidth,
         })

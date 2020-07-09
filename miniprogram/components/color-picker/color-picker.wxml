@@ -2,7 +2,7 @@
   <view wx:if="{{mask}}" class="weui-mask" catchtap="close" catchtouchmove="close"></view>
   <view class="weui-actionsheet {{show ? 'weui-actionsheet_toggle' : ''}}" catchtouchmove="preventdefault">
     <view class="weui-half-screen-dialog__hd" >
-      <view class="weui-half-screen-dialog__hd__side" bindtap="close">
+      <view class="weui-half-screen-dialog__hd__side" >
         <a class="weui-icon-btn">
           <i class="weui-icon-close-thin"></i>
         </a>

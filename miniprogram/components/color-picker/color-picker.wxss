@@ -82,7 +82,6 @@
 }
 
 .weui-half-screen-dialog__hd {
-	z-index: 3;
 	padding: 0 calc(24px + env(safe-area-inset-right));
 	font-size: 8px;
 	height: 8em;
