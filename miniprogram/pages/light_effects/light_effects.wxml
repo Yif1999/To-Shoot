@@ -1,0 +1,7 @@
+<view bindtap="handleTap" bindtouchstart="handleTouchStart" bindtouchend="handleTouchEnd" class="page" style="background-color:{{color}}">
+	<view class="mark" bindtap="handleBack">
+		<image class="mark1" style="top:{{statusBarHeight+5}}px" src="../../images/back.svg"></image>
+	</view>
+</view>
+
+<van-toast id="van-toast" />

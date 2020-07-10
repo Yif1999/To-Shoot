@@ -5,7 +5,10 @@
 		"pages/about/about",
 		"pages/reward/reward",
 		"pages/green_screen/green_screen",
-		"pages/screen_light/screen_light"
+		"pages/screen_light/screen_light",
+		"pages/light_effects_list/light_effects_list",
+		"pages/light_effects/light_effects",
+		"pages/clap_stick/clap_stick"
 	],
 	"window": {
 		"backgroundColor": "#FFFFFF",

@@ -1,45 +1,61 @@
 <image class="top_img" mode="widthFix" src="/images/index.png"></image>
 
-<view class="subTitle">拍摄</view>
+<view class="subTitle">前期拍摄</view>
 <van-grid clickable column-num="2">
   <van-grid-item
-    icon="home-o"
+    use-slot
     link-type="navigateTo"
     url="/pages/green_screen/green_screen"
-    text="绿幕"
-  />
+  >
+    <view class="iconfont icon-tianchongpingmu_norbeifen" />
+    <view class="text">绿幕</view>
+  </van-grid-item>
+
   <van-grid-item
-    icon="search"
+    use-slot
     link-type="navigateTo"
     url="/pages/screen_light/screen_light"
-    text="屏幕灯光"
-  />
-	  <van-grid-item
-    icon="home-o"
-    link-type="navigateTo"
-    url="/pages/dashboard/index"
-    text="场景光效"
-  />
-  <van-grid-item
-    icon="search"
-    link-type="reLaunch"
-    url="/pages/dashboard/index"
-    text="场记板"
-  />
-</van-grid>
+  >
+    <view class="iconfont icon-shouji" />
+    <view class="text">屏幕灯光</view>
+  </van-grid-item>
 
-<view class="subTitle">媒体</view>
+	<van-grid-item
+    use-slot
+    link-type="navigateTo"
+    url="/pages/light_effects_list/light_effects_list"
+  >
+    <view class="iconfont icon-guangzhao" />
+    <view class="text">场景光效</view>
+  </van-grid-item>
+
+	<van-grid-item
+    use-slot
+    link-type="navigateTo"
+    url="/pages/clap_stick/clap_stick"
+  >
+    <view class="iconfont icon-changjing" />
+    <view class="text">场记板</view>
+  </van-grid-item>
+</van-grid>
+<!-- ---------------------------------------- -->
+<view class="subTitle">后期处理</view>
 <van-grid clickable column-num="2">
   <van-grid-item
-    icon="home-o"
+    use-slot
     link-type="navigateTo"
-    url="/pages/dashboard/index"
-    text="Navigate 跳转"
-  />
+    url="/pages/green_screen/green_screen"
+  >
+    <view class="iconfont icon-seka" />
+    <view class="text">色卡</view>
+  </van-grid-item>
+
   <van-grid-item
-    icon="search"
-    link-type="reLaunch"
-    url="/pages/dashboard/index"
-    text="ReLaunch 跳转"
-  />
+    use-slot
+    link-type="navigateTo"
+    url="/pages/screen_light/screen_light"
+  >
+    <view class="iconfont icon-fenbianlv" />
+    <view class="text">超分辨率</view>
+  </van-grid-item>
 </van-grid>

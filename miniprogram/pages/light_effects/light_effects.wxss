@@ -1,0 +1,15 @@
+.page {
+  display: block;
+  min-height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.page .mark .mark1 {
+  position: fixed;
+  left: 12pt;
+  width: 24pt;
+  height: 24pt;
+}

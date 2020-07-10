@@ -98,6 +98,20 @@
 					"pathName": "pages/screen_light/screen_light",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "光效列表",
+					"pathName": "pages/light_effects_list/light_effects_list",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 7,
+					"name": "场景灯光",
+					"pathName": "pages/light_effects/light_effects",
+					"query": "id=1",
+					"scene": null
 				}
 			]
 		}

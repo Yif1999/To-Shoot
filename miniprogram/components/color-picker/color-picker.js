@@ -23,6 +23,10 @@ Component({
   lifetimes: {
     attached() {
       let { initColor} = this.data;
+      let color=wx.getStorageSync('color');
+      if (color){
+        initColor=color;
+      }
       this.setData({
         hueColor: this.hsv2rgb((this.rgb2hsv(initColor)).h,100,100)
       })
@@ -57,15 +61,16 @@ Component({
     onEnd() {
       this.triggerEvent('changeColor', {
         color: this.data.colorRes
-      })
+      })      
     },
     changeHue: function (e) {
       let hue = e.detail.value;
+      
       this.setData({
         "hsv.h":hue,
         hueColor: this.hsv2rgb(hue, 100, 100),
         colorRes: this.hsv2rgb(hue, this.data.hsv.s, this.data.hsv.v)
-      })
+      });
     },
     changeSV: function (e) {
       let {

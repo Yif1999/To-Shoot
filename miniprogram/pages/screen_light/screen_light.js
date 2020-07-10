@@ -22,6 +22,8 @@ Page({
       },
     })
     let rgb=wx.getStorageSync('color');
+    console.log(rgb);
+    
     if (rgb){
       this.setData({
         rgb

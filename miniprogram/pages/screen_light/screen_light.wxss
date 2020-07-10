@@ -14,7 +14,7 @@
 }
 .vant_pop .popup .color .colorDisplay {
   margin-left: auto;
-  margin-top: 3px;
+  margin-top: 1px;
   display: flex;
   justify-content: flex-end;
   align-items: center;

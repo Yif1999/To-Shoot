@@ -16,7 +16,6 @@ Page({
   },
   
   onShow(){
-
     wx.getSystemInfo({
       success: (result) => {
         this.setData({

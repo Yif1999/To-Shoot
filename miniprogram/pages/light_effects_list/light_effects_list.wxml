@@ -1,0 +1,31 @@
+<view class="wrap">
+  <view class="title">
+    <image mode="widthFix" class="icon" src="../../images/boom.svg" /><text class="name">烟火效果</text>
+  </view>
+  <view class="list">
+    <view class="button" data-id="1" hover-class="tap" bindtap="showLightEffects">爆炸</view>
+    <view class="button" data-id="2" hover-class="tap" bindtap="showLightEffects">枪火</view>
+    <view class="button" data-id="3" hover-class="tap" bindtap="showLightEffects">闪光弹</view>
+  </view>
+</view>
+<view class="wrap">
+  <view class="title">
+    <image mode="widthFix" class="icon" src="../../images/baojing.svg" /><text class="name">灯光效果</text>
+  </view>
+  <view class="list">
+    <view class="button" data-id="4" hover-class="tap" bindtap="showLightEffects">警灯闪烁</view>
+    <view class="button" data-id="5" hover-class="tap" bindtap="showLightEffects">闪光灯群</view>
+    <view class="button" data-id="6" hover-class="tap" bindtap="showLightEffects">烛光摇曳</view>
+  </view>
+</view><view class="wrap">
+  <view class="title">
+    <image mode="widthFix" class="icon" src="../../images/rgb.svg" /><text class="name">RGB渐变</text>
+  </view>
+  <view class="list">
+    <view class="button" data-id="7" hover-class="tap" bindtap="showLightEffects">全彩渐变</view>
+    <view class="button" data-id="8" hover-class="tap" bindtap="showLightEffects">蓝色渐变</view>
+    <view class="button" data-id="9" hover-class="tap" bindtap="showLightEffects">红色渐变</view>
+  </view>
+</view>
+
+<text class="text">温馨提示：请勿长时间直视场景光效页面！</text>
