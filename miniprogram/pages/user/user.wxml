@@ -1,9 +1,16 @@
-<van-cell
-  is-link
-  title="关于"
-  link-type="navigateTo"
-  url="/pages/about/about"
-/>
+<view class="user_wrap" hover-class="tap">
+  <image mode="widthFix" class="avatar" src="../../images/shoot.jpg"></image>
+  <view class="name">未登录</view>
+  <van-icon name="arrow" />
+</view>
+
+<view class="list_wrap" bindtap="toAbout">
+  <view class="list" hover-class="tap">
+    <text class="content" url="/pages/about/about">关于</text>
+    <van-icon name="arrow" />
+  </view>
+
+</view>  
 
 <view class="svg_wrap">
 	<image class="no_data" src="../../images/no_data.svg"></image>

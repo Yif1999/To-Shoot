@@ -1,0 +1,6 @@
+	<view class="page-section">
+	<view class="page-section-title">只可以横向移动</view>
+<movable-area>
+		<movable-view direction="horizontal">text</movable-view>
+	</movable-area>
+</view>

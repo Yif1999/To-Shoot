@@ -1,2 +1,44 @@
-<!--pages/clap_stick/clap_stick.wxml-->
-<text>pages/clap_stick/clap_stick.wxml</text>
+<image class="changjiban" mode="widthFix" src="../../images/changjiban-1.svg" ></image>
+<image class="changjiban" mode="widthFix" src="../../images/changjiban-2.svg" ></image>
+
+<view class="info" style="height:{{height-width/7}}px">
+	<view class="first_line">
+			<view class="text">PRODUCTION片名</view>
+			<input class="input" focus />
+	</view>
+	<view class="second_line">
+		<view class="row">
+			<input class="input" />
+			<view class="text">ROLL卷号</view>
+		</view>
+		<view class="row">
+		<input class="input" />
+			<view class="text">SCENE场景</view>
+		</view>
+		<view class="row">
+		<input class="input" />
+			<view class="text">SHOT镜号</view>
+		</view>
+		<view class="row">
+		<input class="input" />
+			<view class="text">TAKE次数</view>
+		</view>
+	</view>
+	<view class="third_line">
+		<view class="row">
+			<input class="input" />
+			<view class="text">DIRECTOR导演</view>
+		</view>
+		<view class="row">
+			<input class="input" />
+			<view class="text">CAMERAMEN摄像师</view>
+		</view>
+	</view>
+	<view class="fourth_line">
+		<view class="text">DATE日期</view>
+		<view class="time">{{time}}</view>
+	</view>
+</view>
+
+<view class="iconfont icon-fanhui" hover-class="tap" bindtap="handleBack"></view>
+<!-- <view class="iconfont icon-changjing" hover-class="tap" bindtap="handleClap"></view> -->

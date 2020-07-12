@@ -44,18 +44,18 @@
   <van-grid-item
     use-slot
     link-type="navigateTo"
-    url="/pages/green_screen/green_screen"
+    url="/pages/color_card/color_card"
   >
     <view class="iconfont icon-seka" />
     <view class="text">色卡</view>
   </van-grid-item>
 
-  <van-grid-item
+  <!-- <van-grid-item
     use-slot
     link-type="navigateTo"
-    url="/pages/screen_light/screen_light"
+    url="/pages/super_resolution/super_resolution"
   >
     <view class="iconfont icon-fenbianlv" />
     <view class="text">超分辨率</view>
-  </van-grid-item>
+  </van-grid-item> -->
 </van-grid>

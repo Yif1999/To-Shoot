@@ -8,7 +8,10 @@
 		"pages/screen_light/screen_light",
 		"pages/light_effects_list/light_effects_list",
 		"pages/light_effects/light_effects",
-		"pages/clap_stick/clap_stick"
+		"pages/clap_stick/clap_stick",
+		"pages/color_card/color_card",
+		"pages/super_resolution/super_resolution",
+		"pages/light_effects_choose/light_effects_choose"
 	],
 	"window": {
 		"backgroundColor": "#FFFFFF",

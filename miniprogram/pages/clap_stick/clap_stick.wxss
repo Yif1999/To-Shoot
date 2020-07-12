@@ -1,1 +1,120 @@
-/* pages/clap_stick/clap_stick.wxss */
+page {
+  background-color: #323232;
+}
+.changjiban {
+  display: block;
+  background-color: black;
+}
+.info {
+  color: #ccc;
+  font-size: 20rpx;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 50px 0px 50px;
+}
+.info .first_line {
+  flex: 2;
+  border-bottom: 2px solid #ccc;
+  display: flex;
+  align-items: center;
+}
+.info .first_line .text {
+  margin-right: 25rpx;
+}
+.info .first_line .input {
+  min-height: 27rpx;
+  width: 50vw;
+  color: white;
+  font-size: 27rpx;
+  text-align: center;
+}
+.info .second_line {
+  flex: 3;
+  border-bottom: 2px solid #ccc;
+  display: flex;
+}
+.info .second_line .row {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-right: 2px solid #ccc;
+  padding-left: 10rpx;
+}
+.info .second_line .row .input {
+  flex: 3;
+  min-height: 27rpx;
+  color: white;
+  font-size: 27rpx;
+  text-align: center;
+}
+.info .second_line .row .text {
+  flex: 1;
+}
+.info .second_line .row:last-child {
+  border-right: 0;
+}
+.info .second_line .row:first-child {
+  padding-left: 0;
+}
+.info .third_line {
+  flex: 3;
+  border-bottom: 2px solid #ccc;
+  display: flex;
+}
+.info .third_line .row {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-right: 2px solid #ccc;
+  padding-left: 10rpx;
+}
+.info .third_line .row .input {
+  flex: 3;
+  min-height: 27rpx;
+  color: white;
+  font-size: 27rpx;
+  text-align: center;
+}
+.info .third_line .row .text {
+  flex: 1;
+}
+.info .third_line .row:last-child {
+  border-right: 0;
+}
+.info .third_line .row:first-child {
+  padding-left: 0;
+}
+.info .fourth_line {
+  flex: 1.5;
+  display: flex;
+  align-items: center;
+}
+.info .fourth_line .text {
+  margin-right: 20rpx;
+}
+.iconfont.icon-fanhui {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  text-align: center;
+  font-size: normal;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 10px;
+}
+.iconfont.icon-changjing {
+  position: fixed;
+  bottom: 20px;
+  right: 70px;
+  font-weight: bold;
+  text-align: center;
+  font-size: normal;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 10px;
+}
+.iconfont.tap {
+  background-color: rgba(255, 255, 255, 0.5);
+}

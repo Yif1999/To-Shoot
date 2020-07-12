@@ -1,0 +1,48 @@
+/**index.wxss**/
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.img-placeholder {
+  margin-top: 100rpx;
+
+  background-color: white;
+
+  border-radius: 8px;
+  width: 500rpx;
+  height: 500rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 8px rgba(0,0,0,.05);
+}
+
+.icon-add {
+  width: 350rpx;
+  height: 350rpx;
+  padding: 30rpx;
+  border-radius: 5px;
+  border: 1rpx dashed rgb(88, 88, 88);
+}
+
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 100px;
+  width: 100%;
+}
+
+.text {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: small;
+  color: hsl(0, 0%, 75%);
+  word-break: keep-all;
+}
+

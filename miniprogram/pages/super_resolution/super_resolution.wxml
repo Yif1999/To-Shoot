@@ -1,0 +1,12 @@
+<view class="container">
+  <view class='img-placeholder' bindtap='chooseImg'>
+    <van-icon class="icon-add" name="plus" size="40rpx" color="rgb(50,50,50)"/>
+  </view>
+
+  <van-button bind:click="handleClick" class="button" color="linear-gradient(to right, #4bb0ff, #6149f6)">
+    渐变色按钮
+  </van-button>
+
+</view>
+
+<text class="text">注意：仅支持上传小于2M的图片进行处理，目前支持生成图片分辨率为原图2倍大小。</text>

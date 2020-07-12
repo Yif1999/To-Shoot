@@ -75,7 +75,7 @@ Page({
 		}
 		// 闪光灯群效果
 		else if (this.data.id==5){
-			let time=40;
+			let time=50;
 			let lighten=false;
 			this.data.light=setInterval(() => {
 				if (lighten){
@@ -180,9 +180,10 @@ Page({
 	},
 
 	handleTap(){
-		clearInterval(this.data.light);
+
 		// 爆炸效果
 		if (this.data.id==1){
+			clearInterval(this.data.light);
 			console.log("tap");
 			let time=20;
 			let l=0;
@@ -204,6 +205,7 @@ Page({
 		}
 		// 闪光弹效果
 		else if (this.data.id==3){
+			clearInterval(this.data.light);
 			console.log("tap");
 			let time=20;
 			let l=0;
