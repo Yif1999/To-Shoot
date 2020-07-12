@@ -3,35 +3,35 @@
 
 <view class="info" style="height:{{height-width/7}}px">
 	<view class="first_line">
-			<view class="text">PRODUCTION片名</view>
-			<input class="input" focus />
+			<view class="text" >PRODUCTION片名</view>
+			<input class="input" value='{{inputText[0]}}' data-index="{{0}}" bindinput="handleInput" focus />
 	</view>
 	<view class="second_line">
 		<view class="row">
-			<input class="input" />
-			<view class="text">ROLL卷号</view>
+			<input class="input" value='{{inputText[1]}}' data-index="{{1}}" bindinput="handleInput"/>
+			<view class="text" >ROLL卷号</view>
 		</view>
 		<view class="row">
-		<input class="input" />
-			<view class="text">SCENE场景</view>
+		<input class="input" value='{{inputText[2]}}' data-index="{{2}}" bindinput="handleInput"/>
+			<view class="text" >SCENE场景</view>
 		</view>
 		<view class="row">
-		<input class="input" />
-			<view class="text">SHOT镜号</view>
+		<input class="input" value='{{inputText[3]}}' data-index="{{3}}" bindinput="handleInput"/>
+			<view class="text" >SHOOT镜号</view>
 		</view>
 		<view class="row">
-		<input class="input" />
-			<view class="text">TAKE次数</view>
+		<input class="input" value='{{inputText[4]}}' data-index="{{4}}" bindinput="handleInput"/>
+			<view class="text" >TAKE次数</view>
 		</view>
 	</view>
 	<view class="third_line">
 		<view class="row">
-			<input class="input" />
-			<view class="text">DIRECTOR导演</view>
+			<input class="input" value='{{inputText[5]}}' data-index="{{5}}" bindinput="handleInput"/>
+			<view class="text" >DIRECTOR导演</view>
 		</view>
 		<view class="row">
-			<input class="input" />
-			<view class="text">CAMERAMEN摄像师</view>
+			<input class="input" value='{{inputText[6]}}' data-index="{{6}}" bindinput="handleInput"/>
+			<view class="text" >CAMERAMEN摄像师</view>
 		</view>
 	</view>
 	<view class="fourth_line">
@@ -41,4 +41,10 @@
 </view>
 
 <view class="iconfont icon-fanhui" hover-class="tap" bindtap="handleBack"></view>
-<!-- <view class="iconfont icon-changjing" hover-class="tap" bindtap="handleClap"></view> -->
+<view class="iconfont icon-changjing" hover-class="tap" bindtap="handleClap"></view>
+
+<view class="countdown {{clapActive?'active':''}}" hidden="{{!clapActive}}">{{countdown}}</view>
+
+<van-overlay wx:if="{{show}}" show="{{ true }}" duration="{{duration}}" class="overlay">
+  <view class="actionTime">{{actionTime}}</view>
+</van-overlay>

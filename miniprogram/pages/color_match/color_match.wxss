@@ -1,0 +1,66 @@
+/**index.wxss**/
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.img-placeholder {
+  margin-top: 100rpx;
+
+  background-color: white;
+
+  border-radius: 8px;
+  width: 500rpx;
+  height: 500rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 8px rgba(0,0,0,.05);
+}
+
+.icon-add {
+  width: 350rpx;
+  height: 350rpx;
+  padding: 30rpx;
+  border-radius: 5px;
+  border: 1rpx dashed rgb(88, 88, 88);
+}
+
+.pic_container{
+  border-radius: 100rpx;
+}
+
+.colors-container {
+  max-width: 80%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100rpx;
+  box-shadow: 0 3px 8px rgba(0,0,0,.1);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.colors-container .color {
+  flex: 1;
+  max-width: 42px;
+  height: 100%;
+}
+
+#image-handler {
+  box-shadow: 0 3px 8px rgba(0,0,0,.1);
+  border-radius: 8px;
+  margin-top: 80rpx;
+}
+
+.text {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  font-size: small;
+  color: hsl(0, 0%, 75%);
+}

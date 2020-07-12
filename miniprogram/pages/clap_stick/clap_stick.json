@@ -1,5 +1,7 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "van-overlay": "@vant/weapp/overlay/index"
+  },
   "pageOrientation": "landscape",
   "navigationStyle" : "custom",
   "disableScroll": true

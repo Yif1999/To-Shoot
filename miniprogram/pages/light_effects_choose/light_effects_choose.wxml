@@ -1,6 +1,14 @@
-	<view class="page-section">
-	<view class="page-section-title">只可以横向移动</view>
-<movable-area>
-		<movable-view direction="horizontal">text</movable-view>
-	</movable-area>
+<view class="button">
+	<view class="one" bindtap="handleOne" hover-class="active">
+		<text class="iconfont icon-dengguang"></text>
+		<text class="text">单色灯光</text>
+	</view>
+
+<view class="two" bindtap="handleTwo" hover-class="active">
+		<text class="iconfont icon-guangzhao"></text>
+		<text class="text">场景光效</text>
+	</view>
+
+
+
 </view>

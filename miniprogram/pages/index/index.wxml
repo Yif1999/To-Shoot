@@ -14,7 +14,7 @@
   <van-grid-item
     use-slot
     link-type="navigateTo"
-    url="/pages/screen_light/screen_light"
+    url="/pages/light_effects_choose/light_effects_choose"
   >
     <view class="iconfont icon-shouji" />
     <view class="text">屏幕灯光</view>
@@ -23,10 +23,10 @@
 	<van-grid-item
     use-slot
     link-type="navigateTo"
-    url="/pages/light_effects_list/light_effects_list"
+    url="/pages/color_card/color_card"
   >
-    <view class="iconfont icon-guangzhao" />
-    <view class="text">场景光效</view>
+    <view class="iconfont icon-seka" />
+    <view class="text">色卡</view>
   </van-grid-item>
 
 	<van-grid-item
@@ -44,10 +44,10 @@
   <van-grid-item
     use-slot
     link-type="navigateTo"
-    url="/pages/color_card/color_card"
+    url="/pages/color_match/color_match"
   >
-    <view class="iconfont icon-seka" />
-    <view class="text">色卡</view>
+    <view class="iconfont icon-peise" />
+    <view class="text">配色分析</view>
   </van-grid-item>
 
   <!-- <van-grid-item

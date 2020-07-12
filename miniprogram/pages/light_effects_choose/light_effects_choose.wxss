@@ -1,45 +1,55 @@
-
-movable-view {
+page {
+  background-color: white;
+}
+.button {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100rpx;
-  width: 100rpx;
-  background: #1AAD19;
-  color: #fff;  
+  padding: 20rpx 40rpx 20rpx 40rpx;
 }
-
-movable-area {
-  height: 400rpx;
-  width: 400rpx;
-  margin: 50rpx 0rpx 0 50rpx;
-  background-color: #ccc;
-  overflow: hidden;
-}
-
-.max {
-  width: 600rpx;
-  height: 600rpx;
-}
-
-.page-section {
+.button .one {
   width: 100%;
-  margin-bottom: 20rpx;
+  height: 200rpx;
+  color: white;
+  border-radius: 15rpx;
+  background: linear-gradient(to bottom right, #4bb0ff, #8556e5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 8px 8px 12px -10px #8556e5;
 }
-
-.page-section-title {
-  margin-top: 50rpx;
-  font-size: 28rpx;
-  color: #999999;
-  margin-bottom: 10rpx;
-  padding-left: 30rpx;
-  padding-right: 30rpx;
+.button .one .iconfont {
+  font-size: 50rpx;
+  margin-right: 80rpx;
 }
-
-.page-section-title.first {
-  margin-top: 0;
+.button .one .text {
+  font-size: 40rpx;
+  margin: 50rpx;
 }
-
-.btn-area {
-  margin-top: 20rpx;
+.button .one.active {
+  background: linear-gradient(to bottom right, rgba(75, 176, 255, 0.8), rgba(133, 86, 229, 0.8));
+}
+.button .two {
+  margin-top: 30rpx;
+  width: 100%;
+  height: 200rpx;
+  color: white;
+  border-radius: 15rpx;
+  background: linear-gradient(to bottom right, #f33f83, #7339b3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 8px 8px 12px -10px #7339b3;
+}
+.button .two .iconfont {
+  font-size: 60rpx;
+  margin-right: 80rpx;
+}
+.button .two .text {
+  font-size: 40rpx;
+  margin: 50rpx;
+}
+.button .two.active {
+  background: linear-gradient(to bottom right, rgba(243, 63, 131, 0.8), rgba(115, 57, 179, 0.8));
 }

@@ -109,7 +109,7 @@
 					"scene": null
 				},
 				{
-					"id": -1,
+					"id": 7,
 					"name": "色卡",
 					"pathName": "pages/color_card/color_card",
 					"query": "",
@@ -133,6 +133,13 @@
 					"id": -1,
 					"name": "灯光选择",
 					"pathName": "pages/light_effects_choose/light_effects_choose",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "配色分析",
+					"pathName": "pages/color_match/color_match",
 					"query": "",
 					"scene": null
 				}

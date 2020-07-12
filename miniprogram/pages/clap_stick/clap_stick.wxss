@@ -27,6 +27,7 @@ page {
   color: white;
   font-size: 27rpx;
   text-align: center;
+  z-index: 1;
 }
 .info .second_line {
   flex: 3;
@@ -47,6 +48,7 @@ page {
   color: white;
   font-size: 27rpx;
   text-align: center;
+  z-index: 1;
 }
 .info .second_line .row .text {
   flex: 1;
@@ -76,6 +78,7 @@ page {
   color: white;
   font-size: 27rpx;
   text-align: center;
+  z-index: 1;
 }
 .info .third_line .row .text {
   flex: 1;
@@ -117,4 +120,35 @@ page {
 }
 .iconfont.tap {
   background-color: rgba(255, 255, 255, 0.5);
+}
+.countdown {
+  position: fixed;
+  bottom: 18px;
+  right: 120px;
+  font-weight: bold;
+  text-align: center;
+  font-size: xx-large;
+  color: white;
+}
+.countdown.active {
+  animation: fadeInRight 0.3s 1;
+}
+.overlay {
+  position: absolute;
+  animation: fadeOut 4s 1;
+  animation-fill-mode: forwards;
+}
+.overlay .actionTime {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: white;
+  font-size: 120rpx;
+  font-weight: bold;
+  z-index: 2;
 }

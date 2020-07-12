@@ -1,11 +1,14 @@
-<view class="container">
-  <view wx:if="{{!imgPath}}" class='img-placeholder' bindtap='chooseImg'>
-    <van-icon class="icon-add" name="plus" size="40rpx" color="rgb(50,50,50)"/>
-  </view>
-  <canvas wx:if="{{imgPath}}" id='image-handler' style='{{"width:"+canvasWidth+"px;height:"+canvasHeight+"px;"}}' canvas-id="imageHandler" bindtap='chooseImg'></canvas>
-  <view wx:if="{{state !== 1}}" class='colors-container' style='{{"width:"+colors.length * 40 + "px;"}}' bindtap='copyColorInfo'>
-    <view wx:for="{{colors}}" wx:key="{{item}}" class='color' style='{{"background-color:"+item}}'></view>
-  </view>
-</view>
+<van-tabs animated="{{true}}" swipeable="{{true}}" active="{{ active }}" ellipsis="{{false}}" color="var(--themeColor)">
+  <van-tab title="Datacolor SpyderCheckr 24">
+	<image class="img" src="../../images/Datacolor SpyderCheckr 24.svg"></image>
+	</van-tab>
+  <van-tab title="X-Rite ColorChecer Classic-Legacy">
 
-<text class="text">点击色卡复制色号</text>
+	</van-tab>
+  <van-tab title="X-Rite ColorChecker Classic">
+
+	</van-tab>
+  <van-tab title="X-Rite ColorChecker Passport Viedo">
+
+	</van-tab>
+</van-tabs>
