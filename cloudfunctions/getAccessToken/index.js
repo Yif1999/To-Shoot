@@ -1,7 +1,7 @@
 // 云函数入口文件
 const cloud = require('wx-server-sdk')
 const rp = require('request-promise')
-cloud.init()
+cloud.init({env:cloud.DYNAMIC_CURRENT_ENV})
 let db = cloud.database()
 
 // 云函数入口函数

@@ -19,6 +19,7 @@
 .user_wrap .name {
   flex: 8;
   font-weight: bold;
+  font-size: 30rpx;
 }
 .user_wrap .arrow {
   flex: 1;

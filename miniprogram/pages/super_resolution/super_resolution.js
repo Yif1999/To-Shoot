@@ -95,7 +95,7 @@ Page({
 								fail:function(res){
 									wx.showToast({
 										title: '保存失败',
-										image:'../../images/failed.svg',
+										icon:'loading',
 										mask: true,
 									})
 									that.setData({loading:false})

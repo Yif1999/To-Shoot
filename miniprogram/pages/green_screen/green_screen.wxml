@@ -16,7 +16,7 @@
   show="{{ show }}"
   round
   position="bottom"
-  custom-style="height: 275px"
+  custom-style="height: 280px"
   bind:close="onClose"
 	overlay="{{true}}"
 >

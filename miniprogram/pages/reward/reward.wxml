@@ -12,4 +12,4 @@
   <image bindtap="handleAliPay" mode="widthFix" class="qrcode" src="../../images/AliPay.png"></image>
 </view>
 
-<text class="text">感谢您的支持！</text>
+<text class="text">感谢支持！</text>
