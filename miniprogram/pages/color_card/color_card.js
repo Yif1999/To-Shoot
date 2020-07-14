@@ -3,5 +3,11 @@ Page({
 	data:{
 
 		active: 0,
+	},
+	
+	handleBack(){
+		wx.navigateBack({
+			delta: 0,
+		})
 	}
 })

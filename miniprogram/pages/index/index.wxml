@@ -50,12 +50,12 @@
     <view class="text">配色分析</view>
   </van-grid-item>
 
-  <!-- <van-grid-item
+  <van-grid-item
     use-slot
     link-type="navigateTo"
     url="/pages/super_resolution/super_resolution"
   >
     <view class="iconfont icon-fenbianlv" />
     <view class="text">超分辨率</view>
-  </van-grid-item> -->
+  </van-grid-item>
 </van-grid>

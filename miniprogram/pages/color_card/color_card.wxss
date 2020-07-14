@@ -2,3 +2,17 @@
 	height: 75vh;
 	margin-top: 20px;
 }
+.iconfont.icon-fanhui {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  text-align: center;
+  font-size: normal;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.6);
+	padding: 10px;
+	border: 1px solid #ccc;
+}
+.tap {
+  background-color: rgba(255, 255, 255, 0.3);
+}

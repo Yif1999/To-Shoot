@@ -1,14 +1,16 @@
 <van-tabs animated="{{true}}" swipeable="{{true}}" active="{{ active }}" ellipsis="{{false}}" color="var(--themeColor)">
   <van-tab title="Datacolor SpyderCheckr 24">
-	<image class="img" src="../../images/Datacolor SpyderCheckr 24.svg"></image>
+		<image class="img" src="../../images/Datacolor_SpyderCheckr_24.svg"></image>
 	</van-tab>
   <van-tab title="X-Rite ColorChecer Classic-Legacy">
-
+		<image class="img" src="../../images/X-Rite_ColorChecer_Classic-Legacy.svg"></image>
 	</van-tab>
   <van-tab title="X-Rite ColorChecker Classic">
-
+		<image class="img" src="../../images/X-Rite_ColorChecker_Classic.svg"></image>
 	</van-tab>
   <van-tab title="X-Rite ColorChecker Passport Viedo">
-
+		<image class="img" src="../../images/X-Rite_ColorChecker_Passport_Viedo.svg"></image>
 	</van-tab>
 </van-tabs>
+
+<view class="iconfont icon-fanhui" hover-class="tap" bindtap="handleBack"></view>
