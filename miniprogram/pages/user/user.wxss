@@ -1,3 +1,6 @@
+page {
+  padding-bottom: 70px;
+}
 .user_wrap {
   background-color: white;
   border-radius: 15rpx;

@@ -21,7 +21,7 @@ Page({
       count: 1,
       sizeType: ['original'],
       sourceType: ['album'],
-      success: function(res) {
+      success: function(res) {		
 				const imgURL=res.tempFilePaths[0];
 				let cloudPath="super_resolution/"+util.genUUID()+imgURL.match(/\.[^.]+?$/)[0];	
 					wx.cloud.uploadFile({
@@ -47,8 +47,6 @@ Page({
 					})
       }
 		});
-
-		
 	},
 	
 	// 超分辨率请求并下载
