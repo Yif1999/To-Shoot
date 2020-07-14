@@ -12,7 +12,8 @@
 		"pages/color_card/color_card",
 		"pages/super_resolution/super_resolution",
 		"pages/light_effects_choose/light_effects_choose",
-		"pages/color_match/color_match"
+		"pages/color_match/color_match",
+		"pages/user_info/user_info"
 	],
 	"window": {
 		"backgroundColor": "#FFFFFF",
@@ -36,6 +37,7 @@
     }]
   },
 	"usingComponents": {
-		"van-icon": "@vant/weapp/icon/index"
+		"van-icon": "@vant/weapp/icon/index",
+		"van-dialog": "@vant/weapp/dialog/index"
   }
 }

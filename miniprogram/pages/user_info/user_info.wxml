@@ -1,0 +1,3 @@
+<view class="svg_wrap">
+	<image class="no_data" src="../../images/no_data.svg"></image>
+</view>

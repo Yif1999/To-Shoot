@@ -7,11 +7,10 @@
   justify-content: center;
   align-items: center;
   .avatar{
-    flex: 1;
+    flex: 1.5;
     height: auto;
     margin-left: 10rpx;
     margin-right: 30rpx;
-    padding: 20rpx;
     border-radius: 100rpx;
     border: 2rpx solid rgb(243,243,243);
     background-color: white;
@@ -58,14 +57,27 @@
   background-color: rgb(250,250,250);
 }
 
-
-.svg_wrap{
-	display: flex;
+.wrap{
+  display: flex;
+  align-items: center;
   justify-content: center;
-  .no_data{
-    padding-top: 150rpx;
-    width: 25%;
-    
+  height: 100%;
+  .block{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 5px;
+    .text{
+      font-size: large;
+      flex: 1;
+      margin: 40px 0 25px 0;
+      text-align: center;
+    }
+    .button{
+      flex: 1;
+    }
   }
 }
+
 

@@ -8,11 +8,10 @@
   align-items: center;
 }
 .user_wrap .avatar {
-  flex: 1;
+  flex: 1.5;
   height: auto;
   margin-left: 10rpx;
   margin-right: 30rpx;
-  padding: 20rpx;
   border-radius: 100rpx;
   border: 2rpx solid #f3f3f3;
   background-color: white;
@@ -54,11 +53,25 @@
 .tap {
   background-color: #fafafa;
 }
-.svg_wrap {
+.wrap {
   display: flex;
+  align-items: center;
   justify-content: center;
+  height: 100%;
 }
-.svg_wrap .no_data {
-  padding-top: 150rpx;
-  width: 25%;
+.wrap .block {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.wrap .block .text {
+  font-size: large;
+  flex: 1;
+  margin: 40px 0 25px 0;
+  text-align: center;
+}
+.wrap .block .button {
+  flex: 1;
 }

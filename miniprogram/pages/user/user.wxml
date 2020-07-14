@@ -1,6 +1,11 @@
-<view class="user_wrap" hover-class="tap">
+<view wx:if="{{!userInfo}}" class="user_wrap" hover-class="tap" bindtap="handleLogin">
   <image mode="widthFix" class="avatar" src="../../images/shoot.jpg"></image>
   <view class="name">未登录</view>
+  <van-icon name="arrow" />
+</view>
+<view wx:else class="user_wrap" hover-class="tap" bindtap="toUserInfo">
+  <image mode="widthFix" class="avatar" src="{{userInfo.avatarUrl}}"></image>
+  <view class="name">{{userInfo.nickName}}</view>
   <van-icon name="arrow" />
 </view>
 
@@ -12,6 +17,17 @@
 
 </view>  
 
-<view class="svg_wrap">
-	<image class="no_data" src="../../images/no_data.svg"></image>
-</view>
+<van-overlay show="{{ show }}" bind:click="onClose">
+  <view class="wrap">
+    <view class="block">
+      <view class="text">登了也没啥用 👻</view>
+
+      <button
+       class="button"
+       type="primary" open-type="getUserInfo" bindgetuserinfo="getUserInfo" style="margin:15px;background-color:var(--themeColor)">还要登</button>
+    
+    </view>
+
+  </view>
+
+</van-overlay>
