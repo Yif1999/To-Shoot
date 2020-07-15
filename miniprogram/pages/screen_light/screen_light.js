@@ -9,7 +9,7 @@ Page({
     brightness:0.5,
     height:0,
     width:0,
-    rgb: 'rgb(0,255,0)',//初始值
+    rgb: 'rgb(250,40,250)',//初始值
     pick: false
   },
   

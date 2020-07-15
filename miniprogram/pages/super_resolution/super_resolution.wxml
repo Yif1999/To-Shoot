@@ -1,5 +1,5 @@
 <view class="container">
-  <view wx:if="{{!imgURL}}" class='img-placeholder' bindtap='chooseImg'>
+  <view wx:if="{{!localImg}}" class='img-placeholder' bindtap='chooseImg'>
     <van-icon class="icon-add" name="plus" size="40rpx" color="rgb(50,50,50)"/>
   </view>
   <image 
@@ -11,8 +11,8 @@
   >
   </image>
 
-<van-button bind:click="handleClick" class="button" loading="{{loading}}" disabled="{{!needDelete}}" type="info" loading-text="生成中...">高清化并保存至相册</van-button>
+<van-button bind:click="handleClick" class="button" loading="{{loading}}" disabled="{{!enable}}" type="info" loading-text="生成中...">高清化并保存至相册</van-button>
 
 </view>
 
-<text class="text">注意：仅支持高清化小于2M的低分辨率图片，生成图片分辨率为原图2倍大小。</text>
+<text class="text">【实验功能】消耗后端服务器资源，请勿大量使用！</text>

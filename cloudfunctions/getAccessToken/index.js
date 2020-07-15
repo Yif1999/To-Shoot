@@ -9,19 +9,19 @@ exports.main = async (event, context) => {
   let res= await db.collection('access_token').get();
   const wxContext = cloud.getWXContext()
   const page = event.page
-		const scene = event.scene
-		const appid = 'wxb36513df41963ea5',
-			secret = '363709021e808c6338d66b523fc6018a';
-		const AccessToken_options = {
-			method: 'GET',
-			url: 'https://api.weixin.qq.com/cgi-bin/token',
-			qs: {
-				appid,
-				secret,
-				grant_type: 'client_credential'
-			},
-			json: true
-    };
+  const scene = event.scene
+  const appid = 'wxb36513df41963ea5',
+        secret = '363709021e808c6338d66b523fc6018a';
+  const AccessToken_options = {
+    method: 'GET',
+    url: 'https://api.weixin.qq.com/cgi-bin/token',
+    qs: {
+      appid,
+      secret,
+      grant_type: 'client_credential'
+    },
+    json: true
+  };
 	// 判断是否已有token值
 	if (!res.data.length){
     const resultValue = await rp(AccessToken_options);	
