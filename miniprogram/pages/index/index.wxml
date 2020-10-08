@@ -55,7 +55,7 @@
     link-type="navigateTo"
     url="/pages/super_resolution/super_resolution"
   >
-    <view class="iconfont icon-fenbianlv" />
+    <view class="iconfont icon-screen"/>
     <view class="text">超分辨率</view>
   </van-grid-item>
 </van-grid>

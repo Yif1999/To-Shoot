@@ -24,7 +24,7 @@
 	<view class="popup" >
 		<view class="color">
 			<view class="chooseColor_wrap"><view bindtap="changeGreen" class="chooseColor1">
-				<van-icon wx:if="{{num==0}}" name="success" color="black" size="40rpx"/>
+				<van-icon wx:if="{{num==0}}" name="success" color="black"/>
 			</view></view>
 			<view class="chooseColor_wrap"><view bindtap="changeBlue" class="chooseColor2">
 				<van-icon wx:if="{{num==1}}" name="success" color="white"/>

@@ -14,9 +14,7 @@ Page({
 		mask:false,
 		show:false,
 		actionTime:null,	
-		inputText:[],
 	},
-
 
 	onShow(){
 		wx.getSystemInfo({
@@ -30,8 +28,15 @@ Page({
 		const self = this
 		let userInput = wx.getStorageSync('userInput')
 		if (userInput) {
-				self.data.inputText = userInput
-				self.setData(self.data)
+				this.setData({
+					pro_t:userInput[0],
+					rol_t:userInput[1],
+					sce_t:userInput[2],
+					sho_t:userInput[3],
+					tak_t:userInput[4],
+					dir_t:userInput[5],
+					cam_t:userInput[6]
+				})
 		}else{
 			wx.setStorageSync('userInput', [])
 		}
@@ -97,15 +102,101 @@ Page({
 	},
 
 	handleInput(e){
-		console.log(e);
-		
+		// console.log(e);		
 		const value = e.detail.value
 		if (value) {
 			const {index}=e.target.dataset;
 			const userInput=wx.getStorageSync('userInput');			
 			userInput[index]=value;
 			console.log(userInput);
-			wx.setStorageSync('userInput', userInput)
+			wx.setStorageSync('userInput', userInput);
+			switch (index) {
+				case 0:
+					this.setData({pro_t:value})
+					break;
+				case 1:
+					this.setData({rol_t:value})
+					break;
+				case 2:
+					this.setData({sce_t:value})
+					break;
+				case 3:
+					this.setData({sho_t:value})
+					break;
+				case 4:
+					this.setData({tak_t:value})
+					break;
+				case 5:
+					this.setData({dir_t:value})
+					break;
+				case 6:
+					this.setData({cam_t:value})
+					break;
+				default:
+					break;
+			}
 		} 
+	},
+
+	handleTap(e){
+		// console.log(e);
+		const {index}=e.target.dataset;
+		switch (index) {
+			case 0:
+				this.setData({pro_f:1});
+				console.log('focus');		
+				break;
+			case 1:
+				this.setData({rol_f:1})
+				break;
+			case 2:
+				this.setData({sce_f:1})
+				break;
+			case 3:
+				this.setData({sho_f:1})
+				break;
+			case 4:
+				this.setData({tak_f:1})
+				break;
+			case 5:
+				this.setData({dir_f:1})
+				break;
+			case 6:
+				this.setData({cam_f:1})
+				break;
+			default:
+				break;
+		}	
+	},
+
+	handleBlur(e){
+		// console.log(e);
+		const {index}=e.target.dataset;
+		switch (index) {
+			case 0:
+				this.setData({pro_f:0});
+				console.log('unfocus');
+				break;
+			case 1:
+				this.setData({rol_f:0})
+				break;
+			case 2:
+				this.setData({sce_f:0})
+				break;
+			case 3:
+				this.setData({sho_f:0})
+				break;
+			case 4:
+				this.setData({tak_f:0})
+				break;
+			case 5:
+				this.setData({dir_f:0})
+				break;
+			case 6:
+				this.setData({cam_f:0})
+				break;
+			default:
+				break;
+		}	
 	}
 })

@@ -39,10 +39,10 @@
 }
 .vant_pop .popup .color {
   display: flex;
-  padding-top: 5px;
-  padding-bottom: 15px;
-  padding-left: 30rpx;
-  padding-right: 30rpx;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .vant_pop .popup .color .chooseColor_wrap {
   flex: 1;
@@ -54,27 +54,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60rpx;
-  width: 60rpx;
-  border-radius: 30rpx;
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
   background-color: #00FF00;
 }
 .vant_pop .popup .color .chooseColor_wrap .chooseColor2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60rpx;
-  width: 60rpx;
-  border-radius: 30rpx;
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
   background-color: #0000FF;
 }
 .vant_pop .popup .color .chooseColor_wrap .chooseColor3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60rpx;
-  width: 60rpx;
-  border-radius: 30rpx;
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
   background-color: #FFFF00;
 }
 .vant_pop .popup .lightness {

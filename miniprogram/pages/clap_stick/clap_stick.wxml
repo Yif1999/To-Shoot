@@ -4,33 +4,83 @@
 <view class="info" style="height:{{height-width/7}}px">
 	<view class="first_line">
 			<view class="text" >PRODUCTION片名</view>
-			<input class="input" value='{{inputText[0]}}' data-index="{{0}}" bindinput="handleInput" focus />
+			<block wx:if="{{pro_f}}">
+				<input class="input" data-index="{{0}}" bindblur="handleBlur" bindinput="handleInput" maxlength="13"  focus/>
+			</block>	
+			<block wx:else>
+				<view class="input" data-index="{{0}}" bindtap="handleTap">
+					{{pro_t}}
+				</view>
+			</block>
+
 	</view>
 	<view class="second_line">
 		<view class="row">
-			<input class="input" value='{{inputText[1]}}' data-index="{{1}}" bindinput="handleInput"/>
+			<block wx:if="{{rol_f}}">
+				<input class="input" data-index="{{1}}" bindblur="handleBlur" bindinput="handleInput" maxlength="5" focus />
+			</block>	
+			<block wx:else>
+				<view class="input" data-index="{{1}}" bindtap="handleTap">
+					{{rol_t}}
+				</view>
+			</block>
 			<view class="text" >ROLL卷号</view>
 		</view>
 		<view class="row">
-		<input class="input" value='{{inputText[2]}}' data-index="{{2}}" bindinput="handleInput"/>
+			<block wx:if="{{sce_f}}">
+				<input class="input" data-index="{{2}}" bindblur="handleBlur" bindinput="handleInput" maxlength="5" focus />
+			</block>	
+			<block wx:else>
+				<view class="input" data-index="{{2}}" bindtap="handleTap">
+					{{sce_t}}
+				</view>
+			</block>
 			<view class="text" >SCENE场景</view>
 		</view>
 		<view class="row">
-		<input class="input" value='{{inputText[3]}}' data-index="{{3}}" bindinput="handleInput"/>
+			<block wx:if="{{sho_f}}">
+				<input class="input" data-index="{{3}}" bindblur="handleBlur" bindinput="handleInput" maxlength="5" focus />
+			</block>	
+			<block wx:else>
+				<view class="input" data-index="{{3}}" bindtap="handleTap">
+					{{sho_t}}
+				</view>
+			</block>
 			<view class="text" >SHOOT镜号</view>
 		</view>
 		<view class="row">
-		<input class="input" value='{{inputText[4]}}' data-index="{{4}}" bindinput="handleInput"/>
+			<block wx:if="{{tak_f}}">
+				<input class="input" data-index="{{4}}" bindblur="handleBlur" bindinput="handleInput" maxlength="5" focus />
+			</block>	
+			<block wx:else>
+				<view class="input" data-index="{{4}}" bindtap="handleTap">
+					{{tak_t}}
+				</view>
+			</block>
 			<view class="text" >TAKE次数</view>
 		</view>
 	</view>
 	<view class="third_line">
 		<view class="row">
-			<input class="input" value='{{inputText[5]}}' data-index="{{5}}" bindinput="handleInput"/>
+			<block wx:if="{{dir_f}}">
+				<input class="input" data-index="{{5}}" bindblur="handleBlur" bindinput="handleInput" maxlength="11" focus />
+			</block>	
+			<block wx:else>
+				<view class="input" data-index="{{5}}" bindtap="handleTap">
+					{{dir_t}}
+				</view>
+			</block>
 			<view class="text" >DIRECTOR导演</view>
 		</view>
 		<view class="row">
-			<input class="input" value='{{inputText[6]}}' data-index="{{6}}" bindinput="handleInput"/>
+			<block wx:if="{{cam_f}}">
+				<input class="input" data-index="{{6}}" bindblur="handleBlur" bindinput="handleInput" maxlength="11" focus />
+			</block>	
+			<block wx:else>
+				<view class="input" data-index="{{6}}" bindtap="handleTap">
+					{{cam_t}}
+				</view>
+			</block>
 			<view class="text" >CAMERAMEN摄像师</view>
 		</view>
 	</view>

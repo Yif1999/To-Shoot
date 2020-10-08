@@ -30,7 +30,7 @@ component_1.VantComponent({
         beforeRead: null,
         previewSize: {
           type: null,
-          value: 90,
+          value: 80,
         },
         name: {
           type: [Number, String],
@@ -211,6 +211,27 @@ component_1.VantComponent({
         current: item.url || item.path,
         fail: function () {
           wx.showToast({ title: '预览图片失败', icon: 'none' });
+        },
+      });
+    },
+    // fix: accept 为 video 时不能展示视频
+    onPreviewVideo: function (event) {
+      if (!this.data.previewFullImage) return;
+      var index = event.currentTarget.dataset.index;
+      var lists = this.data.lists;
+      wx.previewMedia({
+        sources: lists
+          .filter(function (item) {
+            return item.isVideo;
+          })
+          .map(function (item) {
+            item.type = 'video';
+            item.url = item.url || item.path;
+            return item;
+          }),
+        current: index,
+        fail: function () {
+          wx.showToast({ title: '预览视频失败', icon: 'none' });
         },
       });
     },

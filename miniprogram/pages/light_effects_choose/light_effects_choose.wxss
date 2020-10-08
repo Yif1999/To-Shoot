@@ -1,16 +1,18 @@
 page {
   background-color: white;
+  height: 100%;
 }
 .button {
   display: flex;
+  height: 100%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 20rpx 40rpx 20rpx 40rpx;
 }
 .button .one {
-  width: 100%;
-  height: 200rpx;
+  width: 90%;
+  height: 400rpx;
   color: white;
   border-radius: 15rpx;
   background: linear-gradient(to bottom right, #4bb0ff, #8556e5);
@@ -21,19 +23,21 @@ page {
 }
 .button .one .iconfont {
   font-size: 50rpx;
-  margin-right: 80rpx;
+  margin-left: 30rpx;
 }
 .button .one .text {
-  font-size: 40rpx;
+  font-size: 50rpx;
   margin: 50rpx;
+  font-weight: lighter;
 }
 .button .one.active {
   background: linear-gradient(to bottom right, rgba(75, 176, 255, 0.8), rgba(133, 86, 229, 0.8));
 }
 .button .two {
-  margin-top: 30rpx;
-  width: 100%;
-  height: 200rpx;
+  margin-top: 50px;
+  margin-bottom: 70px;
+  width: 90%;
+  height: 400rpx;
   color: white;
   border-radius: 15rpx;
   background: linear-gradient(to bottom right, #f33f83, #7339b3);
@@ -44,11 +48,12 @@ page {
 }
 .button .two .iconfont {
   font-size: 60rpx;
-  margin-right: 80rpx;
+  margin-left: 30rpx;
 }
 .button .two .text {
-  font-size: 40rpx;
+  font-size: 50rpx;
   margin: 50rpx;
+  font-weight: lighter;
 }
 .button .two.active {
   background: linear-gradient(to bottom right, rgba(243, 63, 131, 0.8), rgba(115, 57, 179, 0.8));

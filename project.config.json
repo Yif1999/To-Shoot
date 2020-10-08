@@ -1,149 +1,153 @@
 {
-	"miniprogramRoot": "miniprogram/",
-	"cloudfunctionRoot": "cloudfunctions/",
-	"setting": {
-		"urlCheck": false,
-		"es6": true,
-		"enhance": true,
-		"postcss": true,
-		"preloadBackgroundData": false,
-		"minified": true,
-		"newFeature": true,
-		"coverView": true,
-		"nodeModules": true,
-		"autoAudits": false,
-		"showShadowRootInWxmlPanel": true,
-		"scopeDataCheck": false,
-		"uglifyFileName": true,
-		"checkInvalidKey": true,
-		"checkSiteMap": true,
-		"uploadWithSourceMap": true,
-		"compileHotReLoad": false,
-		"babelSetting": {
-			"ignore": [],
-			"disablePlugins": [],
-			"outputPath": ""
-		},
-		"useIsolateContext": true,
-		"useCompilerModule": false,
-		"userConfirmedUseCompilerModuleSwitch": false,
-		"packNpmManually": false,
-		"packNpmRelationList": []
-	},
-	"appid": "wxb36513df41963ea5",
-	"projectname": "%E5%8E%BB%E6%8B%8D",
-	"libVersion": "2.11.3",
-	"simulatorType": "wechat",
-	"simulatorPluginLibVersion": {},
-	"cloudfunctionTemplateRoot": "cloudfunctionTemplate",
-	"condition": {
-		"search": {
-			"current": -1,
-			"list": []
-		},
-		"conversation": {
-			"current": -1,
-			"list": []
-		},
-		"plugin": {
-			"current": -1,
-			"list": []
-		},
-		"game": {
-			"list": []
-		},
-		"gamePlugin": {
-			"current": -1,
-			"list": []
-		},
-		"miniprogram": {
-			"current": -1,
-			"list": [
-				{
-					"id": -1,
-					"name": "我的",
-					"pathName": "pages/user/user",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "关于",
-					"pathName": "pages/about/about",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "打赏",
-					"pathName": "pages/reward/reward",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "绿幕",
-					"pathName": "pages/green_screen/green_screen",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "屏幕灯光",
-					"pathName": "pages/screen_light/screen_light",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "光效列表",
-					"pathName": "pages/light_effects_list/light_effects_list",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": 7,
-					"name": "场景灯光",
-					"pathName": "pages/light_effects/light_effects",
-					"query": "id=1",
-					"scene": null
-				},
-				{
-					"id": 7,
-					"name": "色卡",
-					"pathName": "pages/color_card/color_card",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "超分辨率",
-					"pathName": "pages/super_resolution/super_resolution",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "场记板",
-					"pathName": "pages/clap_stick/clap_stick",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "灯光选择",
-					"pathName": "pages/light_effects_choose/light_effects_choose",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "配色分析",
-					"pathName": "pages/color_match/color_match",
-					"query": "",
-					"scene": null
-				}
-			]
-		}
-	}
+  "miniprogramRoot": "miniprogram/",
+  "cloudfunctionRoot": "cloudfunctions/",
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": true,
+    "coverView": true,
+    "nodeModules": true,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": true,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "useIsolateContext": true,
+    "useCompilerModule": false,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "useMultiFrameRuntime": false,
+    "useApiHook": true
+  },
+  "appid": "wxb36513df41963ea5",
+  "projectname": "%E5%8E%BB%E6%8B%8D",
+  "libVersion": "2.12.2",
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
+  "condition": {
+    "search": {
+      "list": []
+    },
+    "conversation": {
+      "list": []
+    },
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": -1,
+          "name": "我的",
+          "pathName": "pages/user/user",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "关于",
+          "pathName": "pages/about/about",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "打赏",
+          "pathName": "pages/reward/reward",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "绿幕",
+          "pathName": "pages/green_screen/green_screen",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "屏幕灯光",
+          "pathName": "pages/screen_light/screen_light",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "光效列表",
+          "pathName": "pages/light_effects_list/light_effects_list",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 7,
+          "name": "场景灯光",
+          "pathName": "pages/light_effects/light_effects",
+          "query": "id=1",
+          "scene": null
+        },
+        {
+          "id": 7,
+          "name": "色卡",
+          "pathName": "pages/color_card/color_card",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "超分辨率",
+          "pathName": "pages/super_resolution/super_resolution",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "场记板",
+          "pathName": "pages/clap_stick/clap_stick",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "灯光选择",
+          "pathName": "pages/light_effects_choose/light_effects_choose",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "配色分析",
+          "pathName": "pages/color_match/color_match",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 12,
+          "name": "借器材",
+          "pathName": "pages/borrow_equipment/borrow_equipment",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
 }

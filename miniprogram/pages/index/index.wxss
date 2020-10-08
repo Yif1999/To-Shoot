@@ -3,14 +3,14 @@ page{
 }
 
 .subTitle{
-	font-size: 28rpx;
-	padding: 20rpx;
+	font-size: 14px;
+	padding: 10px;
 	color: rgb(125, 125, 125);
 }
 
 .top_img{
-	padding-top: 50rpx;
-	padding-bottom: 10rpx;
+	padding-top: 25px;
+	padding-bottom: 5px;
 	height: auto;
 }
 

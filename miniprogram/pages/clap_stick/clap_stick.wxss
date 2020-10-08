@@ -31,11 +31,13 @@ page {
 }
 .info .second_line {
   flex: 3;
+  overflow: hidden;
   border-bottom: 2px solid #ccc;
   display: flex;
 }
 .info .second_line .row {
   flex: 1;
+  width: 25%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -44,11 +46,14 @@ page {
 }
 .info .second_line .row .input {
   flex: 3;
-  min-height: 27rpx;
+  height: 27rpx;
   color: white;
   font-size: 27rpx;
   text-align: center;
-  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .info .second_line .row .text {
   flex: 1;
@@ -66,6 +71,7 @@ page {
 }
 .info .third_line .row {
   flex: 1;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -78,7 +84,10 @@ page {
   color: white;
   font-size: 27rpx;
   text-align: center;
-  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .info .third_line .row .text {
   flex: 1;

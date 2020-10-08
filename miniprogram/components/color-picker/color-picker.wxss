@@ -10,21 +10,22 @@
 }
 
 .target {
-	height: 600rpx;
-	width: 600rpx;
-	margin: 0 auto;
+	height: 250px;
+	width: 250px;
+	margin: 0px auto;
 	background-image: url(https://cdn.makergyt.com/color_picker_mask.png);
+	background-size: 100% 100%;
 	overflow: hidden;
-	border-radius: 25rpx;
+	border-radius: 15px;
 }
 
 .ribbon {
 	background: -webkit-linear-gradient(left, #f00 0%, #ff0 17%, #0f0 33%, #0ff 50%, #00f 67%, #f0f 83%, #f00 100%);
-	border-radius: 25rpx;
-	width: 600rpx;
-	margin: 40rpx auto;
-	margin-bottom: 60rpx;
-	margin-top: 50rpx;
+	border-radius: 15px;
+	width: 300px;
+	margin: 20px auto;
+	margin-bottom: 30px;
+	margin-top: 25px;
 }
 
 @font-face {
