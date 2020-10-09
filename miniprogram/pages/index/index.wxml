@@ -59,3 +59,16 @@
     <view class="text">超分辨率</view>
   </van-grid-item>
 </van-grid>
+<!-- --------------------------------------- -->
+
+<van-dialog
+  use-slot
+  title="😄更新内容😉"
+  show="{{ show }}"
+  bind:confirm="handleClose"
+  confirm-button-color="#1989fa"
+>
+  <view wx:for="{{update_info[0].info}}" wx:for-index="id">
+    <view class="info">{{update_info[0].info[id]}}</view>
+  </view>
+</van-dialog>

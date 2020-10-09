@@ -39,12 +39,6 @@
   "simulatorPluginLibVersion": {},
   "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
   "condition": {
-    "search": {
-      "list": []
-    },
-    "conversation": {
-      "list": []
-    },
     "plugin": {
       "list": []
     },
@@ -64,7 +58,6 @@
           "scene": null
         },
         {
-          "id": -1,
           "name": "关于",
           "pathName": "pages/about/about",
           "query": "",
@@ -144,6 +137,12 @@
           "id": 12,
           "name": "借器材",
           "pathName": "pages/borrow_equipment/borrow_equipment",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "模拟更新",
+          "pathName": "pages/index/index",
           "query": "",
           "scene": null
         }

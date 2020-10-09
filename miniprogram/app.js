@@ -1,6 +1,8 @@
 //app.js
 App({
+
   onLaunch: function () {
+    let that=this;
     
     if (!wx.cloud) {
       console.error('请使用 2.2.3 或以上的基础库以使用云能力')
@@ -15,6 +17,20 @@ App({
       })
     }
 
-    this.globalData = {}
+    const updateManager = wx.getUpdateManager()
+
+    updateManager.onCheckForUpdate(function (res) {
+    // 请求完新版本信息的回调
+    console.log(res.hasUpdate)
+    })
+
+    updateManager.onUpdateReady(function () {
+      wx.setStorageSync('showUpdateInfo', true)
+      updateManager.applyUpdate();
+    })
+
+    updateManager.onUpdateFailed(function () {
+    // 新版本下载失败
+    })
   }
 })

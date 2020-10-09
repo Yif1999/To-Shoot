@@ -9,7 +9,7 @@ Page({
 
 	onShow: function () {
 		this.getTabBar().init();
-		const userInfo=wx.getStorageSync('userinfo')
+		const userInfo=wx.getStorageSync('userInfo')
 		this.setData({userInfo})
 	},
 
@@ -30,7 +30,7 @@ Page({
 	async getUserInfo(e){
 		const {userInfo}=e.detail;
 		this.setData({userInfo})
-		wx.setStorageSync("userinfo", userInfo);
+		wx.setStorageSync("userInfo", userInfo);
 		let openID=await wx.cloud.callFunction({
 			name:'getOpenID',
 		})
