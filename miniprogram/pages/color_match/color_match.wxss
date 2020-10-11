@@ -6,29 +6,30 @@
   flex-direction: column;
 }
 .img-placeholder {
-  margin-top: 100rpx;
+  margin-top: 150rpx;
 
   background-color: white;
 
   border-radius: 8px;
-  width: 500rpx;
-  height: 500rpx;
+  width: 250px;
+  height: 250px;
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 0 3px 8px rgba(0,0,0,.05);
 }
 
+
 .icon-add {
-  width: 350rpx;
-  height: 350rpx;
-  padding: 30rpx;
+  width: 175px;
+  height: 175px;
+  padding: 15px;
   border-radius: 5px;
   border: 1rpx dashed rgb(88, 88, 88);
 }
 
 .pic_container{
-  border-radius: 100rpx;
+  border-radius: 50px;
 }
 
 .colors-container {

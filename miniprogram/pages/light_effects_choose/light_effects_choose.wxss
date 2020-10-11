@@ -11,10 +11,10 @@ page {
   padding: 20rpx 40rpx 20rpx 40rpx;
 }
 .button .one {
-  width: 90%;
-  height: 400rpx;
+  width: 85%;
+  height: 350rpx;
   color: white;
-  border-radius: 15rpx;
+  border-radius: 8px;
   background: linear-gradient(to bottom right, #4bb0ff, #8556e5);
   display: flex;
   justify-content: center;
@@ -22,24 +22,24 @@ page {
   box-shadow: 8px 8px 12px -10px #8556e5;
 }
 .button .one .iconfont {
-  font-size: 50rpx;
-  margin-left: 30rpx;
+  font-size: 25px;
+  margin-left: 15px;
 }
 .button .one .text {
-  font-size: 50rpx;
-  margin: 50rpx;
+  font-size: 25px;
+  margin: 25px;
   font-weight: lighter;
 }
 .button .one.active {
   background: linear-gradient(to bottom right, rgba(75, 176, 255, 0.8), rgba(133, 86, 229, 0.8));
 }
 .button .two {
-  margin-top: 50px;
-  margin-bottom: 70px;
-  width: 90%;
-  height: 400rpx;
+  margin-top: 100rpx;
+  margin-bottom: 100rpx;
+  width: 85%;
+  height: 350rpx;
   color: white;
-  border-radius: 15rpx;
+  border-radius: 8px;
   background: linear-gradient(to bottom right, #f33f83, #7339b3);
   display: flex;
   justify-content: center;
@@ -47,12 +47,12 @@ page {
   box-shadow: 8px 8px 12px -10px #7339b3;
 }
 .button .two .iconfont {
-  font-size: 60rpx;
-  margin-left: 30rpx;
+  font-size: 30px;
+  margin-left: 15px;
 }
 .button .two .text {
-  font-size: 50rpx;
-  margin: 50rpx;
+  font-size: 25px;
+  margin: 25px;
   font-weight: lighter;
 }
 .button .two.active {
