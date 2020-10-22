@@ -6,5 +6,6 @@
     "van-cell": "@vant/weapp/cell/index",
     "color-picker":"/components/color-picker/color-picker" 
   },
-  "navigationStyle" : "custom"
+  "navigationStyle" : "custom",
+  "disableScroll": true
 }

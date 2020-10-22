@@ -60,7 +60,7 @@
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 30px;
+  height: 50px;
   text-align: center;
   font-size: small;
   color: hsl(0, 0%, 75%);

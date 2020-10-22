@@ -2,5 +2,6 @@
   "usingComponents": {
     "van-toast": "@vant/weapp/toast/index"
   },
-  "navigationStyle" : "custom"
+  "navigationStyle" : "custom",
+  "disableScroll": true
 }

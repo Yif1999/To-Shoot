@@ -13,14 +13,16 @@ Component({
   },
   methods:{
     onChange(event) {
-      this.setData({ active: event.detail }); 
-      let navigateUrl=this.data.list[event.detail].url;
+      this.setData({ active: event.detail });  
+      let navigateUrl=this.data.list[event.detail].url;      
       wx.switchTab({
         url: navigateUrl,
       })
     },
     init() {
       const page = getCurrentPages().pop();
+      console.log(this.data.list.findIndex(item => item.url === `/${page.route}`));  
+      // 获取当前页面并赋值  
       this.setData({
       　  active: this.data.list.findIndex(item => item.url === `/${page.route}`)
       });

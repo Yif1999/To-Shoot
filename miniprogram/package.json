@@ -3,15 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@vant/weapp": "^1.5.1",
-    "animate.css": "^4.1.0",
-    "mini-color-picker": "^0.1.1"
+    "@vant/weapp": "^1.5.2"
   }
 }

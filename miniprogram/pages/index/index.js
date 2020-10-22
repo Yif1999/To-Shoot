@@ -1,4 +1,3 @@
-// pages/user/user.js
 Page({
 
 	/**
@@ -11,6 +10,10 @@ Page({
 	/**
 	 * 生命周期函数--监听页面加载
 	 */
+	onShow: function () {
+		this.getTabBar().init();
+	},
+
 	onLoad: function (options) {
 		let isShow=wx.getStorageSync('showUpdateInfo')
 		console.log(isShow);
