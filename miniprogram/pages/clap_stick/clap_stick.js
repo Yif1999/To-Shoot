@@ -28,15 +28,27 @@ Page({
 		const self = this
 		let userInput = wx.getStorageSync('userInput')
 		if (userInput) {
-				this.setData({
-					pro_t:userInput[0],
-					rol_t:userInput[1],
-					sce_t:userInput[2],
-					sho_t:userInput[3],
-					tak_t:userInput[4],
-					dir_t:userInput[5],
-					cam_t:userInput[6]
-				})
+			if (userInput[0]){
+				this.setData({pro_t:userInput[0]})
+			}
+			if (userInput[1]){
+				this.setData({rol_t:userInput[1]})
+			}
+			if (userInput[2]){
+				this.setData({sce_t:userInput[2]})
+			}
+			if (userInput[3]){
+				this.setData({sho_t:userInput[3]})
+			}
+			if (userInput[4]){
+				this.setData({tak_t:userInput[4]})
+			}
+			if (userInput[5]){
+				this.setData({dir_t:userInput[5]})
+			}
+			if (userInput[6]){
+				this.setData({cam_t:userInput[6]})
+			}
 		}else{
 			wx.setStorageSync('userInput', [])
 		}
